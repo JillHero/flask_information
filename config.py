@@ -1,3 +1,5 @@
+import logging
+
 from redis import StrictRedis
 
 
@@ -12,15 +14,21 @@ class Config():
     SESSION_PERMANENT = False
     PRRMANENT_SESSION_LIFETIONE = 86400 * 2
     SESSION_REDIS = StrictRedis(host=REDIS_HOST, port=REDIS_PORT)
+    LOG_LEVEL = logging.DEBUG
 
 
 class DevelopmentConfig(Config):
+    LOG_LEVEL = logging.DEBUG
+
     DEBUG = True
 
 
 class ProductionConfig(Config):
     DEBUG = False
     SQLALCHEMY_DATABASE_URI = "mysql://root:3471515q@127.0.0.1:3306/information_rewiew"
+    LOG_LEVEL = logging.INFO
+
+
 
 
 config = {
