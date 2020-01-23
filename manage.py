@@ -4,11 +4,16 @@ from flask_wtf import CSRFProtect
 from pymysql import install_as_MySQLdb
 from redis import StrictRedis
 from flask_session import Session
+from flask_script import Manager
+from flask_migrate import MigrateCommand, Migrate
 
 install_as_MySQLdb()
 
 app = Flask(__name__)
 db = SQLAlchemy(app)
+manage = Manager(app)
+Migrate(app, db)
+manage.add_command("db", MigrateCommand)
 
 
 class Config():
@@ -38,4 +43,4 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run()
+    manage.run()
