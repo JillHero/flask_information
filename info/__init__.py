@@ -4,11 +4,16 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_wtf import CSRFProtect
 from redis import StrictRedis
 
-from config import Config
+from config import config
 
-app = Flask(__name__)
-app.config.from_object(Config)
-db = SQLAlchemy(app)
-redis_store = StrictRedis(host=Config.REDIS_HOST, port=Config.REDIS_PORT)
-CSRFProtect(app)
-Session(app)
+db = SQLAlchemy()
+
+
+def create_app(config_name):
+    app = Flask(__name__)
+    app.config.from_object(config[config_name])
+    db.init_app(app)
+    redis_store = StrictRedis(host=config[config_name].REDIS_HOST, port=config[config_name].REDIS_PORT)
+    CSRFProtect(app)
+    Session(app)
+    return app

@@ -2,7 +2,6 @@ from redis import StrictRedis
 
 
 class Config():
-    debug = True
     SECRET_KEY = "DR0NLoBAgMxv2w1LYunZvnhBRiatRRWLWEjZjAMCnO1GMUYQBSc23Nd+ujqqqlCEUiH3bmhGouHTkApjZaaaVg=="
     SQLALCHEMY_DATABASE_URI = "mysql://root:3471515q@127.0.0.1:3306/information_rewiew"
     SQLALCHEMY_TRACK_MODIFICATIONS = False
@@ -13,3 +12,18 @@ class Config():
     SESSION_PERMANENT = False
     PRRMANENT_SESSION_LIFETIONE = 86400 * 2
     SESSION_REDIS = StrictRedis(host=REDIS_HOST, port=REDIS_PORT)
+
+
+class DevelopmentConfig(Config):
+    DEBUG = True
+
+
+class ProductionConfig(Config):
+    DEBUG = False
+    SQLALCHEMY_DATABASE_URI = "mysql://root:3471515q@127.0.0.1:3306/information_rewiew"
+
+
+config = {
+    "development": DevelopmentConfig,
+    "production": ProductionConfig
+}
