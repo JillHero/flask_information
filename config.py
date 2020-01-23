@@ -18,7 +18,6 @@ class Config():
 
 
 class DevelopmentConfig(Config):
-    LOG_LEVEL = logging.DEBUG
 
     DEBUG = True
 
