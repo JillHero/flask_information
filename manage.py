@@ -1,5 +1,6 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+from flask_wtf import CSRFProtect
 from pymysql import  install_as_MySQLdb
 from redis import StrictRedis
 install_as_MySQLdb()
@@ -20,6 +21,7 @@ class Config():
 
 app.config.from_object(Config)
 redis_store = StrictRedis(host=Config.REDIS_HOST,port=Config.REDIS_PORT)
+CSRFProtect(app)
 
 
 @app.route("/")
