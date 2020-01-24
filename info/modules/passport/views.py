@@ -35,7 +35,7 @@ def get_image_code():
     return response
 
 
-@passport_blu.route("/sms_code", methods=["POST"])
+@passport_blu.route("/smscode", methods=["POST"])
 def send_sms_code():
 
 
@@ -127,14 +127,14 @@ def register():
 
 @passport_blu.route("/login",methods=["POST"])
 def login():
-    params_dict = request.json
-    mobile = params_dict.get("mobile")
-    passport = params_dict.get("passport")
+    param_dict = request.json
+    mobile = param_dict.get("mobile")
+    passport = param_dict.get("password")
 
     if not all([mobile,passport]):
         return jsonify(errno=RET.PARAMERR, errmsg="参数错误")
 
-    if not re.match(r"1[35678]\\d{9}",mobile):
+    if not re.match("1[13579]\\d{9}",mobile):
         return jsonify(errno=RET.PARAMERR, errmsg="手机号格式不正确")
 
     try:
