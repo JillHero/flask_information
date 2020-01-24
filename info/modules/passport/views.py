@@ -1,8 +1,14 @@
-from flask import request, abort, current_app, make_response
+import random
+import re
+
+from flask import request, abort, current_app, make_response, jsonify
 
 from . import passport_blu
 from info.utils.captcha.captcha import captcha
 from info import redis_store, constants
+from info.utils.response_code import RET
+from ...utils.yuntongxun import sms
+from ...utils.yuntongxun.sms import CCP
 
 
 @passport_blu.route('/image_code')
@@ -14,14 +20,60 @@ def get_image_code():
     name, text, image = captcha.generate_captcha()
 
     try:
-        redis_store.set("ImageCode_" + image_code_id,text, constants.IMAGE_CODE_REDIS_EXPIRES)
+        redis_store.set("ImageCode_" + image_code_id, text, constants.IMAGE_CODE_REDIS_EXPIRES)
 
     except Exception as e:
         current_app.logger.debug(e)
         abort(500)
 
-
     response = make_response(image)
     response.headers["Content-Type"] = "image/jpg"
 
     return response
+
+
+@passport_blu.route("/sms_code", methods=["POST"])
+def send_sms_code():
+
+
+    params_dict = request.json
+    mobile = params_dict.get("mobile")
+    image_code = params_dict.get("image_code")
+    image_code_id = params_dict.get("image_code_id")
+
+    if not all([mobile, image_code_id, image_code]):
+        return jsonify(errno=RET.PARAMERR, errmsg="参数有误")
+    if not re.match("1[35678]\\d{9}", mobile):
+        return jsonify(errno=RET.PARAMERR, errmsg="手机号校验失败")
+
+    try:
+        real_image_code = redis_store.get("ImageCode_" + image_code_id)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="数据查询失败")
+
+    if not real_image_code:
+        return jsonify(errno=RET.NODATA, errmsg="验证码已过期")
+
+    if real_image_code.upper() != image_code.upper():
+        return jsonify(errno=RET.DATAERR, errmsg="验证码输入错误")
+
+    redis_store.delete("ImageCode_" + image_code_id)
+
+    sms_code_str = "%06d" % random.randint(0, 999999)
+    current_app.logger.debug("短信验证码是%s" % sms_code_str)
+    try:
+        redis_store.set("SMS_" + mobile, sms_code_str, constants.SMS_CODE_REDIS_EXPIRES)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DATAERR, errmsg="数据保存失败")
+
+    result = CCP().send_template_sms(mobile, [sms_code_str, constants.SMS_CODE_REDIS_EXPIRES],1)
+    print(result)
+
+    if result != 0:
+        return jsonify(errno=RET.THIRDERR, errmsg="发送短信失败")
+
+    return jsonify(errno=RET.OK, errmsg="发送短信成功")
+
+
