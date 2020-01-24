@@ -109,6 +109,8 @@ def register():
     user.mobile = mobile
     user.nick_name = mobile
     user.last_login = datetime.now()
+    user.password = password
+
     # try:
     #     db.session.add(user)
     #     db.session.commit()
