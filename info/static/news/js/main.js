@@ -167,6 +167,7 @@ $(function () {
             data: JSON.stringify(params),
             success: function (resp) {
                 if (resp.errno == "0") {
+                    location.reload()
 
                 } else {
                     $("#register-password-err").html(resp.errmsg)

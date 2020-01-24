@@ -8,7 +8,7 @@ from . import passport_blu
 from info.utils.captcha.captcha import captcha
 from info import redis_store, constants, db
 from info.utils.response_code import RET
-from ...models import User
+from info.models import User
 from ...utils.yuntongxun import sms
 from ...utils.yuntongxun.sms import CCP
 
@@ -111,20 +111,46 @@ def register():
     user.last_login = datetime.now()
     user.password = password
 
-    # try:
-    #     db.session.add(user)
-    #     db.session.commit()
-    # except Exception as e:
-    #     current_app.logger.error(e)
-    #     db.session.rollback()
-    #     return jsonify(errno=RET.DBERR, errmsg="数据保存失败")
-    #
-    # session["user_id"] = user.id
-    # session["mobile"] = user.mobile
-    # session["nick_name"] = user.nick_name
+    try:
+        db.session.add(user)
+        db.session.commit()
+    except Exception as e:
+        current_app.logger.error(e)
+        db.session.rollback()
+        return jsonify(errno=RET.DBERR, errmsg="数据保存失败")
+
+    session["user_id"] = user.id
+    session["mobile"] = user.mobile
+    session["nick_name"] = user.nick_name
 
     return jsonify(errno=RET.OK, errmsg="注册成功")
 
+@passport_blu.route("/login",methods=["POST"])
+def login():
+    params_dict = request.json
+    mobile = params_dict.get("mobile")
+    passport = params_dict.get("passport")
 
+    if not all([mobile,passport]):
+        return jsonify(errno=RET.PARAMERR, errmsg="参数错误")
 
+    if not re.match(r"1[35678]\\d{9}",mobile):
+        return jsonify(errno=RET.PARAMERR, errmsg="手机号格式不正确")
+
+    try:
+        user = User.query.filter(User.mobile == mobile).first()
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="数据查询失败")
+    if not user:
+        return jsonify(errno=RET.NODATA, errmsg="用户不存在")
+
+    if not user.check_passowrd(passport):
+        return jsonify(errno=RET.PWDERR, errmsg="密码错误")
+    
+    session["user_id"] = user.id
+    session["mobile"] = user.mobile
+    session["nick_name"] = user.nick_name
+    
+    return jsonify(errno=RET.OK, errmsg="登陆成功")
 
