@@ -119,8 +119,7 @@ $(function () {
     }
 
         // 发起登录请求
-    })
-    var params = {
+        var params = {
         "mobile":mobile,
         "password":password,
     }
@@ -139,8 +138,9 @@ $(function () {
             }
         }
     })
-})
+    })
 
+})
 
 // TODO 注册按钮点击
 $(".register_form_con").submit(function (e) {
