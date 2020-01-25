@@ -1,7 +1,7 @@
 from flask import session, render_template, current_app, jsonify, request
 
 from . import index_blu
-from ...models import User, News
+from ...models import User, News, Category
 from ...utils.response_code import RET
 
 
@@ -23,9 +23,16 @@ def index():
     news_dict_li = []
     for news in news_list:
         news_dict_li.append(news.to_basic_dict())
+
+    categories = Category.query.all()
+
+    category_li = []
+    for category in categories:
+        category_li.append(category.to_dict())
     data = {
         "user_info": user.to_dict() if user else None,
-        "news_dict_li": news_dict_li
+        "news_dict_li": news_dict_li,
+        "category_li":category_li
 
     }
     return render_template("index.html", data=data)
@@ -68,10 +75,12 @@ def news_list():
     for news in news_list:
         news_dict_li.append(news.to_basic_dict())
 
+
+
     data = {
         "total_page": total_page,
         "current_page": current_page,
-        "news_dict_li": news_dict_li
+        "news_dict_li": news_dict_li,
     }
 
     return jsonify(errno=RET.OK, errmsg="OK", data=data)
