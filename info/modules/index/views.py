@@ -1,7 +1,8 @@
-from flask import session, render_template, current_app
+from flask import session, render_template, current_app,jsonify
 
 from . import index_blu
 from ...models import User
+from ...utils.response_code import RET
 
 
 @index_blu.route("/")
@@ -18,11 +19,11 @@ def index():
         "user_info":user.to_dict() if user else None
 
     }
-
-
-
-
     return render_template("index.html",data=data)
+
+
+
+
 
 
 @index_blu.route("/favicon.ico")
