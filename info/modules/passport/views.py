@@ -37,8 +37,6 @@ def get_image_code():
 
 @passport_blu.route("/smscode", methods=["POST"])
 def send_sms_code():
-
-
     params_dict = request.json
     mobile = params_dict.get("mobile")
     image_code = params_dict.get("image_code")
@@ -80,21 +78,21 @@ def send_sms_code():
     return jsonify(errno=RET.OK, errmsg="发送短信成功")
 
 
-@passport_blu.route("/register",methods=["POST"])
+@passport_blu.route("/register", methods=["POST"])
 def register():
     param_dict = request.json
     mobile = param_dict.get("mobile")
     sms_code = param_dict.get("smscode")
     password = param_dict.get("password")
 
-    if not all([mobile,sms_code,password]):
+    if not all([mobile, sms_code, password]):
         return jsonify(errno=RET.PARAMERR, errmsg="参数错误")
 
-    if not re.match("1[13579]\\d{9}",mobile):
+    if not re.match("1[13579]\\d{9}", mobile):
         return jsonify(errno=RET.PARAMERR, errmsg="手机号格式不正确")
 
     try:
-        real_sms_code = redis_store.get("SMS_"+ mobile)
+        real_sms_code = redis_store.get("SMS_" + mobile)
     except Exception as e:
         current_app.logger.error(e)
 
@@ -125,16 +123,17 @@ def register():
 
     return jsonify(errno=RET.OK, errmsg="注册成功")
 
-@passport_blu.route("/login",methods=["POST"])
+
+@passport_blu.route("/login", methods=["POST"])
 def login():
     param_dict = request.json
     mobile = param_dict.get("mobile")
     passport = param_dict.get("password")
 
-    if not all([mobile,passport]):
+    if not all([mobile, passport]):
         return jsonify(errno=RET.PARAMERR, errmsg="参数错误")
 
-    if not re.match("1[13579]\\d{9}",mobile):
+    if not re.match("1[13579]\\d{9}", mobile):
         return jsonify(errno=RET.PARAMERR, errmsg="手机号格式不正确")
 
     try:
@@ -147,21 +146,24 @@ def login():
 
     if not user.check_passowrd(passport):
         return jsonify(errno=RET.PWDERR, errmsg="密码错误")
-    
+
     session["user_id"] = user.id
     session["mobile"] = user.mobile
     session["nick_name"] = user.nick_name
-    
+    user.last_login = datetime.now()
+    # try:
+    #     db.session.commit()
+    # except Exception as e:
+    #     db.session.rollback()
+    #     current_app.logger.error(e)
+
     return jsonify(errno=RET.OK, errmsg="登陆成功")
-
-
 
 
 @passport_blu.route("/logout")
 def logout():
-    session.pop("user_id",None)
-    session.pop("mobile",None)
-    session.pop("nick_name",None)
+    session.pop("user_id", None)
+    session.pop("mobile", None)
+    session.pop("nick_name", None)
 
     return jsonify(errno=RET.OK, errmsg="成功")
-
