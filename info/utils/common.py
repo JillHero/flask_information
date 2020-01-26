@@ -18,8 +18,7 @@ def do_index_class(index):
 
 
 def user_login_data(func):
-
-    functools.wraps(func)
+    @functools.wraps(func)
     def wapper(*args,**kwargs):
         user_id = session.get("user_id")
         user = None
