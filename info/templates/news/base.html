@@ -2,37 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>首页-新经资讯</title>
+    <title>{% block titleBlock %}
+
+    {% endblock %}</title>
     <link rel="stylesheet" type="text/css" href="../static/news/css/reset.css">
     <link rel="stylesheet" type="text/css" href="../static/news/css/main.css">
     <script type="text/javascript" src="../static/news/js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="../static/news/js/main.js"></script>
-    <script type="text/javascript" src="../static/news/js/index.js"></script>
+    {% block scriptBlock %}
+
+    {% endblock %}
 </head>
 <body>
 <div class="header_con">
     <div class="header">
         <a href="#" class="logo fl"><img src="../static/news/images/logo.png" alt="logo"></a>
-        <ul class="menu fl">
+        {% block categoryBlock %}
+            <ul class="menu fl">
 
-            {% for category in data.category_li %}
-        <li class="{% if loop.index0 == 0 %}active{% endif %}" data-cid="{{ category.id }}"><a href="javascript:;">{{ category.name }}</a></li>
-    {% endfor %}
-{#                        <li class="active" data-cid="0"><a href="javascript:;">最新</a></li>#}
-{#                        <li data-cid="1"><a href="javascript:;">股市</a></li>#}
-{#                        <li data-cid="2"><a href="javascript:;">债市</a></li>#}
-{#                        <li data-cid="3"><a href="javascript:;">商品</a></li>#}
-{#                        <li data-cid="4"><a href="javascript:;">外汇</a></li>#}
-{#                        <li data-cid="5"><a href="javascript:;">公司</a></li>#}
+                {% for category in data.category_li %}
+                    <li class="{% if loop.index0 == 0 %}active{% endif %}" data-cid="{{ category.id }}"><a
+                            href="javascript:;">{{ category.name }}</a></li>
+                {% endfor %}
 
 
-
-        </ul>
+            </ul>
+        {% endblock %}
         {# 判断用户是否登录 #}
         {% if data.user_info %}
             {# 如果登录，则显示用户信息 #}
             <div class="user_login fr">
                 <img src="
+
+
+
+
+
+
                         {% if data.user_info.avatar_url %}{{ data.user_info.avatar_url }}{% else %}../../static/news/images/person01.png{% endif %}"
                      class="lgin_pic">
                 <a href="#">{{ data.user_info.nick_name }}</a>
@@ -48,59 +54,13 @@
 </div>
 
 <div class="conter_con">
-    <ul class="list_con fl">
-        <li>
-            <a href="#" class="news_pic fl"><img src="../static/news/images/news_pic.jpg"></a>
-            <a href="#" class="news_title fl">日本史上最大IPO之一要来了：软银计划将手机业务分拆上市软银计划将手机业务分拆上市</a>
-            <a href="#" class="news_detail fl">据日经新闻网，软银计划让旗下核心业务移动手机部门SoftBank
-                Corp.分拆上市，或募资2万亿日元(约180亿美元)。随着软银逐步向投资公司转型，此举旨在给手机业务部门更多自主权。</a>
-            <div class="author_info fl">
-                <div class="author fl">
-                    <img src="../static/news/images/person.png" alt="author">
-                    <a href="#">乐鸣</a>
-                </div>
-                <div class="time fl">2017-01-01 00:00:00</div>
-            </div>
-        </li>
-        <li>
-            <a href="#" class="news_pic fl"><img src="../static/news/images/news_pic.jpg"></a>
-            <a href="#" class="news_title fl">日本史上最大IPO之一要来了：软银计划将手机业务分拆上市</a>
-            <a href="#" class="news_detail fl">据日经新闻网，软银计划让旗下核心业务移动手机部门SoftBank
-                Corp.分拆上市，或募资2万亿日元(约180亿美元)。随着软银逐步向投资公司转型，此举旨在给手机业务部门更多自主权。</a>
-            <div class="author_info fl">
-                <div class="source fl">
-                    来源：广州日报
-                </div>
-                <div class="time fl">2017-01-01 00:00:00</div>
-            </div>
-        </li>
-        <li>
-            <a href="#" class="news_pic fl"><img src="../static/news/images/news_pic.jpg"></a>
-            <a href="#" class="news_title fl">日本史上最大IPO之一要来了：软银计划将手机业务分拆上市</a>
-            <a href="#" class="news_detail fl">据日经新闻网，软银计划让旗下核心业务移动手机部门SoftBank
-                Corp.分拆上市，或募资2万亿日元(约180亿美元)。随着软银逐步向投资公司转型，此举旨在给手机业务部门更多自主权。</a>
-            <div class="author_info fl">
-                <div class="author fl">
-                    <img src="../static/news/images/person.png" alt="author">
-                    <a href="#">乐鸣</a>
-                </div>
-                <div class="time fl">2017-01-01 00:00:00</div>
-            </div>
-        </li>
-        <li>
-            <a href="#" class="news_pic fl"><img src="../static/news/images/news_pic.jpg"></a>
-            <a href="#" class="news_title fl">日本史上最大IPO之一要来了：软银计划将手机业务分拆上市</a>
-            <a href="#" class="news_detail fl">据日经新闻网，软银计划让旗下核心业务移动手机部门SoftBank
-                Corp.分拆上市，或募资2万亿日元(约180亿美元)。随着软银逐步向投资公司转型，此举旨在给手机业务部门更多自主权。</a>
-            <div class="author_info fl">
-                <div class="source fl">
-                    来源：广州日报
-                </div>
-                <div class="time fl">2017-01-01 00:00:00</div>
-            </div>
-        </li>
-    </ul>
+    {% block contentBlock %}
+    {% endblock %}
+
     <div class="rank_con fr">
+    {% block authorBlock %}
+    
+    {% endblock %}
         <div class="rank_title">
             <h3>点击排行</h3>
         </div>
@@ -112,6 +72,7 @@
             {% endfor %}
         </ul>
     </div>
+
 </div>
 <div class="footer">
     <div class="footer_links">

@@ -35,7 +35,7 @@ def index():
         "category_li":category_li
 
     }
-    return render_template("index.html", data=data)
+    return render_template("news/index.html", data=data)
 
 
 @index_blu.route("/favicon.ico")
