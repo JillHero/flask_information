@@ -38,12 +38,14 @@ def news_detail(news_id):
 
     news.clicks +=1
 
+    is_collected = True
+
 
     data = {
 
         "news_dict_li": news_dict_li,
         "user_info": user.to_dict() if user else None,
-
+        "is_collected":is_collected,
         "news":news.to_dict()
 
     }
