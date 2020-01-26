@@ -34,11 +34,6 @@
             <div class="user_login fr">
                 <img src="
 
-
-
-
-
-
                         {% if data.user_info.avatar_url %}{{ data.user_info.avatar_url }}{% else %}../../static/news/images/person01.png{% endif %}"
                      class="lgin_pic">
                 <a href="#">{{ data.user_info.nick_name }}</a>
@@ -64,6 +59,7 @@
         <div class="rank_title">
             <h3>点击排行</h3>
         </div>
+
         <ul class="rank_list">
 
             {% for new in data.news_dict_li %}
