@@ -1,19 +1,15 @@
-from flask import session, render_template, current_app, jsonify, request
+from flask import session, render_template, current_app, jsonify, request, g
 
 from . import index_blu
 from ...models import User, News, Category
+from ...utils.common import user_login_data
 from ...utils.response_code import RET
 
 
 @index_blu.route("/")
+@user_login_data
 def index():
-    user_id = session.get("user_id")
-    user = None
-    if user_id:
-        try:
-            user = User.query.get(user_id)
-        except Exception as e:
-            current_app.logger.error(e)
+    user = g.user
     news_list = []
     try:
         news_list = News.query.order_by(News.clicks.desc()).limit(6)
