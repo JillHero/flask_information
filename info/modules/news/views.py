@@ -1,10 +1,68 @@
 from flask import render_template, current_app, session, g, abort, request, jsonify
 
 from info import constants, db
-from info.models import News, User, Comment
+from info.models import News, User, Comment, CommentLike
 from info.modules.news import news_blu
 from info.utils.common import user_login_data
 from info.utils.response_code import RET
+
+@news_blu.route("/comment_like",methods=["POST"])
+def comment_like():
+    user = g.user
+
+    if not user:
+        return jsonify(errno=RET.SESSIONERR, errmsg="用户未登陆")
+
+    news_id = request.json.get("news_id")
+    comments_id  = request.json.get("comment_id")
+    action = request.json.get("action")
+
+    if not all([news_id,comments_id,action]):
+        return jsonify(errno=RET.PARAMERR, errmsg="参数错误")
+    if action not in ["add","remove"]:
+        return jsonify(errno=RET.PARAMERR, errmsg="参数错误")
+
+    try:
+        comments_id = int(comments_id)
+        news_id = int(news_id)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.PARAMERR, errmsg="参数错误")
+
+    try:
+        comment = Comment.query.get(comments_id)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="数据查询错误")
+
+    if not comment:
+        return jsonify(errno=RET.NODATA, errmsg="评论不存在")
+
+    if action == "add":
+        comment_like_model = CommentLike.query.filter(CommentLike.user_id == user.id,CommentLike.comment_id ==comment.id).first()
+        comment_like_model.user_id = user.id
+        comment_like_model.comment_id = comment.id
+        db.session.add(comment_like_model)
+
+        try:
+            db.session.add(comment_like_model)
+            db.session.commit()
+        except Exception as e:
+            current_app.logger.error(e)
+            db.session.rollback()
+
+    else:
+        comment_like_model = CommentLike.query.filter(CommentLike.user_id == user.id,CommentLike.comment_id ==comment.id).first()
+        if comment_like_model:
+            comment_like_model.delete()
+
+    return jsonify(errno=RET.OK, errmsg="OK")
+
+
+
+
+
+
 
 
 @news_blu.route("/news_collect", methods=["POST"])
