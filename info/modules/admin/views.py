@@ -1,3 +1,6 @@
+import time
+from datetime import datetime
+
 from flask import render_template, request, current_app, session, redirect, url_for, g
 
 from info.modules.admin import admin_blu
@@ -5,17 +8,15 @@ from info.models import User
 from info.utils.common import user_login_data
 
 
-
 @admin_blu.route("/index")
 @user_login_data
 def index():
     user = g.user
 
+    return render_template("admin/index.html", user=user.to_dict())
 
-    return render_template("admin/index.html",user=user.to_dict())
 
-@admin_blu.route("/login",methods=["GET","POST"])
-
+@admin_blu.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "GET":
         user_id = session.get("user_id", None)
@@ -24,23 +25,23 @@ def login():
             return redirect(url_for("admin.index"))
         return render_template("admin/login.html")
 
-    username =  request.form.get("username")
+    username = request.form.get("username")
     password = request.form.get("password")
 
-    if not all([username,password]):
-        return render_template("admin/login.html",errmsg="参数错误")
+    if not all([username, password]):
+        return render_template("admin/login.html", errmsg="参数错误")
     try:
-        user = User.query.filter(User.mobile == username,User.is_admin == True).first()
+        user = User.query.filter(User.mobile == username, User.is_admin == True).first()
     except Exception as e:
         current_app.logger.error(e)
-        return render_template("admin/login.html",errmsg="用户查询失败")
+        return render_template("admin/login.html", errmsg="用户查询失败")
 
     if not user:
-        return render_template("admin/login.html",errmsg="为查询到用户信息")
+        return render_template("admin/login.html", errmsg="为查询到用户信息")
     if not user.check_passowrd(password):
-        return render_template("admin/login.html",errmsg="用户密码错误")
+        return render_template("admin/login.html", errmsg="用户密码错误")
 
-    session["user_id"] =  user.id
+    session["user_id"] = user.id
     session["mobile"] = user.mobile
     session["nick_name"] = user.nick_name
     session["is_admin"] = user.is_admin
@@ -48,6 +49,32 @@ def login():
     return redirect(url_for("admin.index"))
 
 
-    
-    
+@admin_blu.route("/user_count")
+def user_count():
+    total_count = 0
+    mon_count = 0
+    day_count = 0
+    t = time.localtime()
+    begin_mon_date = datetime.strptime(("%d-%02d-1" % (t.tm_year, t.tm_mon)), "%Y-%m-%d")
+    try:
+        total_count = User.query.filter(User.is_admin == False).count()
+    except Exception as e:
+        current_app.logger.error(e)
 
+    try:
+        mon_count = User.query.filter(User.is_admin == False, User.create_time > begin_mon_date).count()
+    except Exception as e:
+        current_app.logger.error(e)
+
+    begin_day_date = datetime.strptime(("%d-%02d-%02d" % (t.tm_year, t.tm_mon, t.tm_mday)), "%Y-%m-%d")
+    try:
+        day_count = User.query.filter(User.is_admin == False, User.create_time > begin_day_date).count()
+    except Exception as e:
+        current_app.logger.error(e)
+
+    data = {
+        "total_count": total_count,
+        "mon_count": mon_count,
+        "day_count": day_count
+    }
+    return render_template("admin/user_count.html", data=data)
