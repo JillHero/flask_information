@@ -356,22 +356,56 @@ def news_edit_detail():
     return jsonify(errno=RET.OK, errmsg="成功")
     
         
-@admin_blu.route("/news_type")
+@admin_blu.route("/news_type",methods=["GET","POST"])
 def news_type():
+    if request.method == "GET":
+        try:
+            categories = Category.query.all()
+        except Exception as e:
+            current_app.logger.error(e)
+            return render_template("admin/news_type.html",errmsg="查询数据错误")
+    
+        category_dict_li = []
+        for category in categories:
+            category_dict_li.append(category)
+    
+        category_dict_li.pop(0)
+    
+        data = {
+            "categories":category_dict_li
+    
+        }
+        return render_template("admin/news_type.html",data=data)
+    
+    cname = request.json.get("name")
+    cid = request.json.get("id")
+    
+    if not cname:
+        return jsonify(errno=RET.PARAMERR, errmsg="参数错误")
+    category = None
+    if cid:
+        try:
+            cid = int(cid)
+            category = Category.query.get(cid)
+        except Exception as e:
+            current_app.logger.error(e)
+            return jsonify(errno=RET.PARAMERR, errmsg="参数错误")
+        
+        if not category:
+            return jsonify(errno=RET.NODATA, errmsg="未查询到分类数据")
+        
+        category.name = cname
+    else:
+        category = Category()
+        category.name = cname
+        db.session.add(category)
+
     try:
-        categories = Category.query.all()
+        db.session.commit()
     except Exception as e:
         current_app.logger.error(e)
-        return render_template("admin/news_type.html",errmsg="查询数据错误")
+        db.session.rollback()
+        
+    return jsonify(errno=RET.OK, errmsg="成功")
 
-    category_dict_li = []
-    for category in categories:
-        category_dict_li.append(category)
 
-    category_dict_li.pop(0)
-
-    data = {
-        "categories":category_dict_li
-
-    }
-    return render_template("admin/news_type.html",data=data)
