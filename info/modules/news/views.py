@@ -173,11 +173,18 @@ def news_detail(news_id):
             comment_dict["is_like"] = True
         comment_dict_li.append(comment_dict)
 
+
+    is_followers = False
+    if news.user and user:
+        if news.user in user.followers:
+            is_followers = True
+
     data = {
 
         "news_dict_li": news_dict_li,
         "user_info": user.to_dict() if user else None,
         "is_collected": is_collected,
+        "is_followed":is_followers,
         "news": news.to_dict(),
         "comments": comment_dict_li
 
