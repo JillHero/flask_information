@@ -141,7 +141,7 @@ def user_lists():
     return render_template("admin/user_list.html", data=data)
 
 
-@admin_blu.route("news_review")
+@admin_blu.route("/news_review")
 def review_list():
     page = request.args.get("p", 1)
     try:
@@ -224,3 +224,47 @@ def news_review_action():
         db.session.commit()
     return jsonify(errno=RET.OK, errmsg="成功")
         
+@admin_blu.route("/news_edit")
+def news_edit():
+    keywords = request.args.get("keywords", None)
+    page = request.args.get("page", 1)
+    try:
+        page = int(page)
+    except Exception as e:
+        current_app.logger.error(e)
+        page = 1
+
+    news = []
+    current_page = 1
+    total_page = 1
+
+    filters = [News.status == 0]
+    if keywords:
+        filters.append(News.title.contains(keywords))
+    try:
+        paginate = News.query.filter(*filters).order_by(News.create_time.desc()).paginate(page,
+                                                                                          constants.ADMIN_NEWS_PAGE_MAX_COUNT,
+                                                                                          False)
+        news = paginate.items
+        current_page = paginate.page
+        total_page = paginate.pages
+
+    except Exception as e:
+        current_app.logger.error(e)
+
+    user_dict_li = []
+    for new in news:
+        user_dict_li.append(new.to_basic_dict())
+
+    context = {
+        "news_list": user_dict_li,
+        "total_page": total_page,
+        "current_page": current_page
+    }
+
+    return render_template("admin/news_edit.html", data=context)
+
+@admin_blu.route("/news_edit_detail",methods=["GET","POST"])
+def news_edit_detail():
+
+    return render_template("admin/news_edit_detail.html")
