@@ -228,3 +228,47 @@ def comment_news():
         db.session.rollback()
 
     return jsonify(errno=RET.OK, errmsg="成功", comment=comment.to_dict())
+
+
+@news_blu.route("followed_user",methods=["POST"])
+@user_login_data
+def followed_user():
+    user = g.user
+    if not user:
+        return jsonify(errno=RET.SESSIONERR, errmsg="为登陆")
+    user_id = request.json.get("user_id")
+    action = request.json.get("action")
+    if not all([user_id,action]):
+        return jsonify(errno=RET.PARAMERR, errmsg="参数有误")
+    
+    if action not in("follow","unfollow"):
+        return jsonify(errno=RET.PARAMERR, errmsg="参数有误")
+    try:
+        other = User.query.get(user_id)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="数据查询错误")
+    
+    if not other:
+        return jsonify(errno=RET.NODATA, errmsg="为查询到数据")
+    
+    if action == "follow":
+        if other not in user.followed:
+            user.followed.append(other)
+        else:
+            return jsonify(errno=RET.DATAEXIST, errmsg="当前用户已被关注")
+    
+    else:
+        if other in user.followed:
+            user.followed.remove(other)
+
+        else:
+            return jsonify(errno=RET.DATAEXIST, errmsg="当前用户未被关注")
+
+    try:
+        db.session.commit()
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="数据保存错误")
+    return jsonify(errno=RET.OK, errmsg="操作成功")
+            
