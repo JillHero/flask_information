@@ -1,8 +1,8 @@
-from flask import render_template, g, redirect, request, jsonify, current_app
+from flask import render_template, g, redirect, request, jsonify, current_app, abort
 
 from . import profile_blu
 from ... import db, constants
-from ...models import Category, News
+from ...models import Category, News, User
 from ...utils.common import user_login_data
 from ...utils.image_storage import storage
 from ...utils.response_code import RET
@@ -213,3 +213,59 @@ def news_lists():
         "current_page":current_page
     }
     return render_template("news/user_news_list.html",data=data)
+
+@profile_blu.route("/user_follow")
+@user_login_data
+def user_follow():
+    p = request.args.get("p",1)
+    try:
+        p = int(p)
+    except Exception as e:
+        current_app.logger.error(e)
+        p = 1
+    user = g.user
+    follows = []
+    total_page = 1
+    current_page = 1
+
+    try:
+        paginate = user.followed.paginate(p,constants.USER_FOLLOWED_MAX_COUNT,False)
+        follows = paginate.items
+        current_page = paginate.page
+        total_page = paginate.pages
+
+    except Exception as e:
+        current_app.logger.error(e)
+
+    user_dict_li = []
+    for follow_user in follows:
+        user_dict_li.append(follow_user.to_dict())
+
+    data = {
+        "users":user_dict_li,
+        "total_page":total_page,
+        "current_page":current_page
+    }
+
+    return render_template("news/user_follow.html",data=data)
+
+@profile_blu.route("/other_info")
+@user_login_data
+def other_info():
+    user = g.user
+    orther_id = request.args.get("user_id")
+    if not other_info:
+        abort(404)
+    try:
+        other = User.query.get(orther_id)
+    except Exception as e:
+        current_app.logger.error(e)
+    if not other:
+        abort(404)
+
+    is_followed = False
+    if other and user:
+        if other in user.followed:
+            is_followed = True
+    data= {"user": g.user.to_dict() if g.user else None,"other_info":other.to_dict(),"is_followed":is_followed}
+    return render_template("news/other.html",data=data)
