@@ -1,11 +1,11 @@
 import time
 from datetime import datetime, timedelta
 
-from flask import render_template, request, current_app, session, redirect, url_for, g, jsonify
+from flask import render_template, request, current_app, session, redirect, url_for, g, jsonify, abort
 
 from info import constants, db
 from info.modules.admin import admin_blu
-from info.models import User, News
+from info.models import User, News, Category
 from info.utils.common import user_login_data
 from info.utils.response_code import RET
 
@@ -266,5 +266,39 @@ def news_edit():
 
 @admin_blu.route("/news_edit_detail",methods=["GET","POST"])
 def news_edit_detail():
+    news_id = request.args.get("news_id")
+    if not news_id:
+        abort(404)
+    try:
+        news_id = int(news_id)
+    except Exception as e:
+        return render_template("admin/news_edit_detail.html",errmsg="参数错误")
+    try:
+        news = News.query.get(news_id)
+    except Exception as e:
+        current_app.logger.error(e)
+        return render_template("admin/news_edit_detail.html",errmsg="查询数据错误")
 
-    return render_template("admin/news_edit_detail.html")
+    if not news:
+        return render_template("admin/news_edit_detail.html",errmsg="未查询到数据")
+    categories = []
+    try:
+        categoris = Category.query.all()
+    except Exception as e:
+        current_app.logger.error(e)
+        return render_template("admin/news_edit_detail.html",errmsg="查询数据错误")
+    for category in categoris:
+        cate_dict = category.to_dict()
+        if category.id == news.category_id:
+            cate_dict["is_selected"] = True
+
+        categories.append(cate_dict)
+
+    categories.pop(0)
+
+
+    data = {
+        "news":news.to_dict(),
+        "categories":categories
+    }
+    return render_template("admin/news_edit_detail.html",data=data)
