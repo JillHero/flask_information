@@ -127,7 +127,7 @@ def user_collection():
     return render_template("news/user_collection.html", data=data)
 
 
-@profile_blu.route("/news_release",methods=["GET","POST"])
+@profile_blu.route("/news_release", methods=["GET", "POST"])
 @user_login_data
 def news_release():
     if request.method == "GET":
@@ -143,7 +143,7 @@ def news_release():
         for category in categories:
             category_dict_li.append(category.to_dict())
         category_dict_li.pop(0)
-        return render_template("news/user_news_release.html",data={"categories":category_dict_li})
+        return render_template("news/user_news_release.html", data={"categories": category_dict_li})
 
     title = request.form.get("title")
     category_id = request.form.get("category_id")
@@ -152,14 +152,14 @@ def news_release():
     index_image = request.files.get("index_image")
     source = "个人发布"
 
-    if not all([title,category_id,digest,content,index_image,source]):
+    if not all([title, category_id, digest, content, index_image, source]):
         return jsonify(errno=RET.PARAMERR, errmsg="参数有误")
     try:
         category_id = int(category_id)
     except Exception as e:
         current_app.logger.error(e)
         return jsonify(errno=RET.PARAMERR, errmsg="参数有误")
-    
+
     try:
         index_image_data = index_image.read()
         key = storage(index_image_data)
@@ -175,27 +175,27 @@ def news_release():
     news.index_image_url = constants.QINIU_DOMIN_PREFIX + key
     news.user_id = g.user.id
     news.content = content
-    
+
     try:
         db.session.add(news)
         db.session.commit()
     except Exception as e:
         db.session.rollback()
         return jsonify(errno=RET.DBERR, errmsg="数据库保存失败")
-    
+
     return jsonify(errno=RET.OK, errmsg="成功")
 
 
 @profile_blu.route("/news_list")
 @user_login_data
 def news_lists():
-    page = request.args.get("p",1)
+    page = request.args.get("p", 1)
     user = g.user
     news_list = []
     current_page = 1
     total_page = 1
     try:
-        paginate = News.query.filter(News.user_id == user.id).paginate(page,constants.USER_COLLECTION_MAX_NEWS,False)
+        paginate = News.query.filter(News.user_id == user.id).paginate(page, constants.USER_COLLECTION_MAX_NEWS, False)
         news_list = paginate.items
         current_page = paginate.page
         total_page = paginate.pages
@@ -208,16 +208,17 @@ def news_lists():
         news_dict_li.append(news.to_review_dict())
 
     data = {
-        "news_list":news_dict_li,
-        "total_page":total_page,
-        "current_page":current_page
+        "news_list": news_dict_li,
+        "total_page": total_page,
+        "current_page": current_page
     }
-    return render_template("news/user_news_list.html",data=data)
+    return render_template("news/user_news_list.html", data=data)
+
 
 @profile_blu.route("/user_follow")
 @user_login_data
 def user_follow():
-    p = request.args.get("p",1)
+    p = request.args.get("p", 1)
     try:
         p = int(p)
     except Exception as e:
@@ -229,7 +230,7 @@ def user_follow():
     current_page = 1
 
     try:
-        paginate = user.followed.paginate(p,constants.USER_FOLLOWED_MAX_COUNT,False)
+        paginate = user.followed.paginate(p, constants.USER_FOLLOWED_MAX_COUNT, False)
         follows = paginate.items
         current_page = paginate.page
         total_page = paginate.pages
@@ -242,12 +243,13 @@ def user_follow():
         user_dict_li.append(follow_user.to_dict())
 
     data = {
-        "users":user_dict_li,
-        "total_page":total_page,
-        "current_page":current_page
+        "users": user_dict_li,
+        "total_page": total_page,
+        "current_page": current_page
     }
 
-    return render_template("news/user_follow.html",data=data)
+    return render_template("news/user_follow.html", data=data)
+
 
 @profile_blu.route("/other_info")
 @user_login_data
@@ -267,5 +269,49 @@ def other_info():
     if other and user:
         if other in user.followed:
             is_followed = True
-    data= {"user": g.user.to_dict() if g.user else None,"other_info":other.to_dict(),"is_followed":is_followed}
-    return render_template("news/other.html",data=data)
+    data = {"user": g.user.to_dict() if g.user else None, "other_info": other.to_dict(), "is_followed": is_followed}
+    return render_template("news/other.html", data=data)
+
+
+@profile_blu.route("/other_news_list")
+def other_news_list():
+    other_id = request.args.get("user_id")
+    page = request.args.get("p", 1)
+    try:
+        page = int(page)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.PARAMERR, errmsg="参数错误")
+
+    try:
+        other = User.query.get(other_id)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="数据查询失败")
+
+    if not other:
+        return jsonify(errno=RET.NODATA, errmsg="没有数据")
+    news_li = []
+    current_page = 1
+    total_page = 1
+    try:
+
+        pagintate = other.news_list.paginate(page, constants.USER_COLLECTION_MAX_NEWS, False)
+        news_li = pagintate.items
+        current_page = pagintate.page
+        total_page = pagintate.pages
+
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="数据查询失败")
+
+    news_dict_li = []
+    for news_item in news_li:
+        news_dict_li.append(news_item.to_basic_dict())
+
+    data = {
+        "news_list": news_dict_li,
+        "current_page": current_page,
+        "total_page": total_page
+    }
+    return jsonify(errno=RET.OK, errmsg="成功", data=data)
