@@ -5,7 +5,7 @@ from redis import StrictRedis
 
 class Config():
     SECRET_KEY = "DR0NLoBAgMxv2w1LYunZvnhBRiatRRWLWEjZjAMCnO1GMUYQBSc23Nd+ujqqqlCEUiH3bmhGouHTkApjZaaaVg=="
-    SQLALCHEMY_DATABASE_URI = "mysql://root:3471515q@127.0.0.1:3306/information_review"
+    SQLALCHEMY_DATABASE_URI = "mysql://root:3471515q@127.0.0.1:3306/information"
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SQLALCHEMY_COMMIT_ON_TRARDOWN = True
     REDIS_HOST = "127.0.0.1"
@@ -20,7 +20,7 @@ class Config():
 
 class DevelopmentConfig(Config):
 
-    DEBUG = True
+    DEBUG = False
 
 
 class ProductionConfig(Config):
