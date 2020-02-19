@@ -35,7 +35,10 @@ def get_image_code():
     return response
 
 
-@passport_blu.route("/smscode", methods=["POST"])
+
+
+
+@passport_blu.route("/sms_code", methods=["POST"])
 def send_sms_code():
     params_dict = request.json
     mobile = params_dict.get("mobile")
@@ -69,11 +72,11 @@ def send_sms_code():
         current_app.logger.error(e)
         return jsonify(errno=RET.DATAERR, errmsg="数据保存失败")
 
-    # result = CCP().send_template_sms(mobile, [sms_code_str, constants.SMS_CODE_REDIS_EXPIRES],1)
-    # print(result)
-    #
-    # if result != 0:
-    #     return jsonify(errno=RET.THIRDERR, errmsg="发送短信失败")
+    result = CCP().send_template_sms(mobile, [sms_code_str, constants.SMS_CODE_REDIS_EXPIRES],1)
+    print(result)
+
+    if result != 0:
+        return jsonify(errno=RET.THIRDERR, errmsg="发送短信失败")
 
     return jsonify(errno=RET.OK, errmsg="发送短信成功")
 
@@ -128,7 +131,7 @@ def register():
 def login():
     param_dict = request.json
     mobile = param_dict.get("mobile")
-    passport = param_dict.get("password")
+    passport = param_dict.get("passport")
 
     if not all([mobile, passport]):
         return jsonify(errno=RET.PARAMERR, errmsg="参数错误")

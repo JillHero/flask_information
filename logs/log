@@ -5456,3 +5456,1029 @@ INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 18:18:03] "GET /static/news/ima
 INFO _internal.py:122  * Detected change in '/Users/jill/PycharmProjects/flask_infomation/config.py', reloading
 INFO _internal.py:122  * Restarting with stat
 INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:01:18] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:01:18] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:01:20] "GET /passport/image_code?CodeId=2e893b7d-62ea-4e2a-84d2-e1c18cc791fa HTTP/1.1" 403 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:01:20] "GET /static/news/images/shutoff.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:01:37] "GET /passport/image_code?CodeId=8116728e-677c-42e7-9b37-c2866ecac905 HTTP/1.1" 403 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:03:33] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:03:33] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+DEBUG Image.py:426 Importing BlpImagePlugin
+DEBUG Image.py:426 Importing BmpImagePlugin
+DEBUG Image.py:426 Importing BufrStubImagePlugin
+DEBUG Image.py:426 Importing CurImagePlugin
+DEBUG Image.py:426 Importing DcxImagePlugin
+DEBUG Image.py:426 Importing DdsImagePlugin
+DEBUG Image.py:426 Importing EpsImagePlugin
+DEBUG Image.py:426 Importing FitsStubImagePlugin
+DEBUG Image.py:426 Importing FliImagePlugin
+DEBUG Image.py:426 Importing FpxImagePlugin
+DEBUG Image.py:429 Image: failed to import FpxImagePlugin: No module named 'olefile'
+DEBUG Image.py:426 Importing FtexImagePlugin
+DEBUG Image.py:426 Importing GbrImagePlugin
+DEBUG Image.py:426 Importing GifImagePlugin
+DEBUG Image.py:426 Importing GribStubImagePlugin
+DEBUG Image.py:426 Importing Hdf5StubImagePlugin
+DEBUG Image.py:426 Importing IcnsImagePlugin
+DEBUG Image.py:426 Importing IcoImagePlugin
+DEBUG Image.py:426 Importing ImImagePlugin
+DEBUG Image.py:426 Importing ImtImagePlugin
+DEBUG Image.py:426 Importing IptcImagePlugin
+DEBUG Image.py:426 Importing JpegImagePlugin
+DEBUG Image.py:426 Importing Jpeg2KImagePlugin
+DEBUG Image.py:426 Importing McIdasImagePlugin
+DEBUG Image.py:426 Importing MicImagePlugin
+DEBUG Image.py:429 Image: failed to import MicImagePlugin: No module named 'olefile'
+DEBUG Image.py:426 Importing MpegImagePlugin
+DEBUG Image.py:426 Importing MpoImagePlugin
+DEBUG Image.py:426 Importing MspImagePlugin
+DEBUG Image.py:426 Importing PalmImagePlugin
+DEBUG Image.py:426 Importing PcdImagePlugin
+DEBUG Image.py:426 Importing PcxImagePlugin
+DEBUG Image.py:426 Importing PdfImagePlugin
+DEBUG Image.py:426 Importing PixarImagePlugin
+DEBUG Image.py:426 Importing PngImagePlugin
+DEBUG Image.py:426 Importing PpmImagePlugin
+DEBUG Image.py:426 Importing PsdImagePlugin
+DEBUG Image.py:426 Importing SgiImagePlugin
+DEBUG Image.py:426 Importing SpiderImagePlugin
+DEBUG Image.py:426 Importing SunImagePlugin
+DEBUG Image.py:426 Importing TgaImagePlugin
+DEBUG Image.py:426 Importing TiffImagePlugin
+DEBUG Image.py:426 Importing WebPImagePlugin
+DEBUG Image.py:426 Importing WmfImagePlugin
+DEBUG Image.py:426 Importing XbmImagePlugin
+DEBUG Image.py:426 Importing XpmImagePlugin
+DEBUG Image.py:426 Importing XVThumbImagePlugin
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:05:12] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:05:12] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:05:12] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:06:05] "GET /passport/image_code?CodeId=b44b9e72-a294-4684-b29c-b68a7fee0bce HTTP/1.1" 403 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:06:09] "GET /passport/image_code?CodeId=bf4e4259-c725-452b-8e91-74bf1eced22b HTTP/1.1" 403 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:06:49] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:07:03] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:07:03] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:07:05] "GET /passport/image_code?CodeId=931708ed-b2b0-4a07-b385-9d8e1aafbcc4 HTTP/1.1" 403 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:07:50] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:07:50] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:07:50] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:08:25] "GET /passport/image_code?CodeId=8e36f334-9750-4acf-bb80-b56d9b62898e HTTP/1.1" 403 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:08:30] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:08:30] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:08:30] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:09:01] "GET /passport/image_code?CodeId=dd48f56e-6415-42f1-9551-8aa1c47e36fa HTTP/1.1" 403 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:12:51] "GET /passport/image_code?CodeId=ee8064f7-2542-4a24-9ab3-ff4e533f5d50 HTTP/1.1" 403 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:12:59] "GET /passport/image_code?CodeId=ee8064f7-2542-4a24-9ab3-ff4e533f5d50 HTTP/1.1" 403 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:13:21] "GET /passport/image_code?CodeId=ee8064f7-2542-4a24-9ab3-ff4e533f5d50 HTTP/1.1" 403 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1761 Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jill/PycharmProjects/flask_infomation/info/utils/common.py", line 32, in wapper
+    return func(*args,**kwargs)
+  File "/Users/jill/PycharmProjects/flask_infomation/info/modules/index/views.py", line 34, in index
+    return render_template("news/index.html", data=data)
+  File "/usr/local/lib/python3.7/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/usr/local/lib/python3.7/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/jill/PycharmProjects/flask_infomation/info/templates/news/base.html", line 161, in template
+    {% csrf_token %}
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 1005, in render
+    return concat(self.root_render_func(self.new_context(vars)))
+  File "/Users/jill/PycharmProjects/flask_infomation/info/templates/news/index.html", line 1, in top-level template code
+    {% extends "news/base.html" %}
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/jill/PycharmProjects/flask_infomation/info/templates/news/base.html", line 161, in template
+    {% csrf_token %}
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "/usr/local/lib/python3.7/site-packages/jinja2/parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "/usr/local/lib/python3.7/site-packages/jinja2/parser.py", line 144, in parse_statement
+    self.fail_unknown_tag(token.value, token.lineno)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/parser.py", line 97, in fail_unknown_tag
+    return self._fail_ut_eof(name, self._end_token_stack, lineno)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/parser.py", line 90, in _fail_ut_eof
+    self.fail(' '.join(message), lineno)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/parser.py", line 59, in fail
+    raise exc(msg, lineno, self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'csrf_token'.
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:29:29] "GET / HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:29:55] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:29:55] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:29:55] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:29:57] "GET /passport/image_code?CodeId=f970f614-a070-443e-9811-fe06b32d4bd6 HTTP/1.1" 403 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:29:58] "GET /passport/image_code?CodeId=5c3abacd-2ddb-4d98-8b20-b17c4ab628a7 HTTP/1.1" 403 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:30:09] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:30:09] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:30:09] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:30:09] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:30:09] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:30:09] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:30:10] "GET /passport/image_code?CodeId=401e7fde-d5f5-4cc3-bc9f-06707e1ec10e HTTP/1.1" 403 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:30:12] "GET /passport/image_code?CodeId=3a9ea0c4-efc1-4a4c-8593-b375d890479e HTTP/1.1" 403 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:07] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:07] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:07] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:08] "GET /passport/image_code?CodeId=2dd7080c-a626-4572-b3be-bafd9603b701 HTTP/1.1" 403 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:09] "GET /passport/image_code?CodeId=cae33c64-bed5-4011-a734-cf854bc41eb4 HTTP/1.1" 403 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:18] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:18] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:18] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:18] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:18] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:18] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:18] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:19] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:19] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:19] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:19] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:20] "GET /passport/image_code?CodeId=c1b6bddc-40a1-47b2-8f2d-993664a48147 HTTP/1.1" 403 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:27] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:27] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:27] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:27] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:27] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:27] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:27] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:28] "GET /passport/image_code?CodeId=3b3208b4-bcbb-425a-b7ab-bc37d68bf341 HTTP/1.1" 403 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:29] "GET /passport/image_code?CodeId=fc3028bd-bd67-4f68-a44f-96d0b0b92b7e HTTP/1.1" 403 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:29] "GET /passport/image_code?CodeId=ad4f4f36-feb0-44d7-9fd0-c9ca057de18a HTTP/1.1" 403 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:46] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:47] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:47] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:47] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:47] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:47] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:47] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:47] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:48] "GET /passport/image_code?CodeId=4c330c95-e12a-4462-826c-344e41bff908 HTTP/1.1" 403 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:32:57] "GET /passport/image_code?CodeId=0582601b-5f65-4d08-8fcb-f0787ca07754 HTTP/1.1" 403 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:33:05] "GET /passport/image_code?CodeId=0582601b-5f65-4d08-8fcb-f0787ca07754 HTTP/1.1" 403 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:33:27] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:33:28] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:33:29] "GET /passport/image_code?CodeId=f17e6e00-35ae-4c5e-8f57-49d4af64524f HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:33:30] "GET /passport/image_code?CodeId=57022a0f-928e-422a-8f77-342a94668fbc HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:33:35] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:33:35] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:33:35] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:33:35] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:33:35] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:33:35] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:33:35] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:33:36] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:33:36] "GET /passport/image_code?CodeId=d6d543e3-fa57-4f4a-bc2b-0a4ceada38ad HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:33:50] "GET /passport/image_code?CodeId=d6d543e3-fa57-4f4a-bc2b-0a4ceada38ad HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:33:50] "GET /static/news/images/not_found.png HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 275-370-920
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:35:15] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:35:16] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:35:17] "GET /passport/image_code?CodeId=656eca6f-cd4f-4772-9649-d5a593783df7 HTTP/1.1" 403 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:36:46] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:36:46] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:36:46] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:36:47] "GET /passport/image_code?CodeId=fe187530-7fe7-42af-8946-a6caaa1afddc HTTP/1.1" 403 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:36:52] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:36:52] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:36:52] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:36:58] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:37:00] "GET /passport/image_code?CodeId=6b783f82-84bf-4457-acbe-59fe42fc6a6c HTTP/1.1" 403 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:37:01] "GET /passport/image_code?CodeId=2ca0c0cd-1678-4f8d-9f21-f538ccb8ef50 HTTP/1.1" 403 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:37:02] "GET /passport/image_code?CodeId=a0d5a411-60ef-4365-b05e-c9250c9c8a71 HTTP/1.1" 403 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:37:03] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:37:03] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:37:03] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:37:03] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:37:03] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:37:03] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:37:03] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:37:03] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:37:03] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:37:03] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:37:03] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:37:05] "GET /static/news/images/shutoff.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:37:10] "GET /passport/image_code?imageCodeId=2ed7d8f4-42e6-434b-80cd-81210a94feb7 HTTP/1.1" 403 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:37:11] "GET /passport/image_code?imageCodeId=9f4d27c3-6580-4e8d-930e-1ffa331bad79 HTTP/1.1" 403 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:37:12] "GET /passport/image_code?imageCodeId=6745c980-7a8a-474b-82bf-57299f71f072 HTTP/1.1" 403 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:37:12] "GET /passport/image_code?imageCodeId=69e0de3d-5aef-4ab6-93cd-4f9e557d2dfc HTTP/1.1" 403 -
+INFO _internal.py:122  * Detected change in '/Users/jill/PycharmProjects/flask_infomation/info/modules/passport/views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 275-370-920
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:38:14] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:38:15] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:38:15] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:38:15] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:38:15] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:38:15] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:38:15] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:38:15] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+DEBUG views.py:37 图片验证码内容是：ZIPA
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:38:16] "GET /passport/image_code?imageCodeId=25e7f208-3ddf-4b96-9978-7d57445c647d HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/Users/jill/PycharmProjects/flask_infomation/info/modules/passport/views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 275-370-920
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:38:45] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:38:45] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:38:45] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:38:46] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:38:46] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:38:46] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:38:46] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+DEBUG views.py:23 图片验证码内容：LZKS
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:38:47] "GET /passport/image_code?imageCodeId=69962125-fc81-4a4b-aa2a-886f30fc9d91 HTTP/1.1" 200 -
+DEBUG views.py:23 图片验证码内容：QCK5
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:38:48] "GET /passport/image_code?imageCodeId=8348c3ec-6da1-4bda-836a-4d04f8489152 HTTP/1.1" 200 -
+DEBUG views.py:23 图片验证码内容：KRCN
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:38:49] "GET /passport/image_code?imageCodeId=eac05243-1357-49af-b749-51d77b36887b HTTP/1.1" 200 -
+DEBUG views.py:23 图片验证码内容：VUCM
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:38:52] "GET /passport/image_code?imageCodeId=17b38633-8fb1-4070-91c6-37f04f81529c HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 275-370-920
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:40:50] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:40:50] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+DEBUG views.py:23 图片验证码内容：RW9Q
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:40:52] "GET /passport/image_code?imageCodeId=76874447-0a67-4ef8-b5d2-e866f8f9ca36 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:40:59] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:40:59] "GET /static/admin/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:40:59] "GET /static/admin/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:40:59] "GET /static/admin/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:40:59] "GET /static/admin/images/login-bg.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:41:05] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:41:12] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:41:32] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:41:36] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:41:40] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:41:44] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:41:49] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:42:23] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:42:38] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:42:44] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:42:48] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:44:21] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:44:25] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:44:35] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:44:35] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:44:35] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:44:36] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:44:36] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:44:36] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:44:40] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:44:44] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:45:48] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:45:51] "GET /news_list?cid=6&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:45:55] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:45:55] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 19:45:55] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 275-370-920
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:45:31] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:45:31] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:45:31] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:45:31] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:45:31] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:45:31] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:45:31] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:45:31] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:45:32] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:45:32] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+DEBUG views.py:23 图片验证码内容：ZEX5
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:45:34] "GET /passport/image_code?imageCodeId=b3c205db-81bf-499f-9601-6b55db904ab1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:45:34] "GET /static/news/images/shutoff.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:45:47] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 275-370-920
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:46:37] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:46:37] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:46:37] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:46:37] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:46:37] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:46:37] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:46:38] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+DEBUG views.py:23 图片验证码内容：Z3YG
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:46:39] "GET /passport/image_code?imageCodeId=4e4e4b10-4c52-4bd0-bb97-f8bd73405c9a HTTP/1.1" 200 -
+DEBUG views.py:23 图片验证码内容：S5NF
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:46:44] "GET /passport/image_code?imageCodeId=747a2bd2-adc2-44f7-9017-393aed5c3a8c HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:46:47] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:50:09] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:50:16] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:50:16] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:50:16] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+DEBUG views.py:23 图片验证码内容：UEXY
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:50:18] "GET /passport/image_code?imageCodeId=35e43d3d-7f78-4d43-87dc-c25a056335a8 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:50:27] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:50:52] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/Users/jill/PycharmProjects/flask_infomation/info/modules/passport/views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 275-370-920
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:52:37] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:52:37] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:52:37] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:52:37] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:52:38] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+DEBUG views.py:23 图片验证码内容：ZF7S
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:52:39] "GET /passport/image_code?imageCodeId=c087f76e-942d-4374-a6e6-9d18c0b2df6c HTTP/1.1" 200 -
+DEBUG views.py:23 图片验证码内容：QDSU
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:52:46] "GET /passport/image_code?imageCodeId=2c4ae104-2a49-4dc2-9c66-51d7e9f0ca18 HTTP/1.1" 200 -
+DEBUG Image.py:426 Importing BlpImagePlugin
+DEBUG Image.py:426 Importing BmpImagePlugin
+DEBUG Image.py:426 Importing BufrStubImagePlugin
+DEBUG Image.py:426 Importing CurImagePlugin
+DEBUG Image.py:426 Importing DcxImagePlugin
+DEBUG Image.py:426 Importing DdsImagePlugin
+DEBUG Image.py:426 Importing EpsImagePlugin
+DEBUG Image.py:426 Importing FitsStubImagePlugin
+DEBUG Image.py:426 Importing FliImagePlugin
+DEBUG Image.py:426 Importing FpxImagePlugin
+DEBUG Image.py:429 Image: failed to import FpxImagePlugin: No module named 'olefile'
+DEBUG Image.py:426 Importing FtexImagePlugin
+DEBUG Image.py:426 Importing GbrImagePlugin
+DEBUG Image.py:426 Importing GifImagePlugin
+DEBUG Image.py:426 Importing GribStubImagePlugin
+DEBUG Image.py:426 Importing Hdf5StubImagePlugin
+DEBUG Image.py:426 Importing IcnsImagePlugin
+DEBUG Image.py:426 Importing IcoImagePlugin
+DEBUG Image.py:426 Importing ImImagePlugin
+DEBUG Image.py:426 Importing ImtImagePlugin
+DEBUG Image.py:426 Importing IptcImagePlugin
+DEBUG Image.py:426 Importing JpegImagePlugin
+DEBUG Image.py:426 Importing Jpeg2KImagePlugin
+DEBUG Image.py:426 Importing McIdasImagePlugin
+DEBUG Image.py:426 Importing MicImagePlugin
+DEBUG Image.py:429 Image: failed to import MicImagePlugin: No module named 'olefile'
+DEBUG Image.py:426 Importing MpegImagePlugin
+DEBUG Image.py:426 Importing MpoImagePlugin
+DEBUG Image.py:426 Importing MspImagePlugin
+DEBUG Image.py:426 Importing PalmImagePlugin
+DEBUG Image.py:426 Importing PcdImagePlugin
+DEBUG Image.py:426 Importing PcxImagePlugin
+DEBUG Image.py:426 Importing PdfImagePlugin
+DEBUG Image.py:426 Importing PixarImagePlugin
+DEBUG Image.py:426 Importing PngImagePlugin
+DEBUG Image.py:426 Importing PpmImagePlugin
+DEBUG Image.py:426 Importing PsdImagePlugin
+DEBUG Image.py:426 Importing SgiImagePlugin
+DEBUG Image.py:426 Importing SpiderImagePlugin
+DEBUG Image.py:426 Importing SunImagePlugin
+DEBUG Image.py:426 Importing TgaImagePlugin
+DEBUG Image.py:426 Importing TiffImagePlugin
+DEBUG Image.py:426 Importing WebPImagePlugin
+DEBUG Image.py:426 Importing WmfImagePlugin
+DEBUG Image.py:426 Importing XbmImagePlugin
+DEBUG Image.py:426 Importing XpmImagePlugin
+DEBUG Image.py:426 Importing XVThumbImagePlugin
+DEBUG views.py:68 短信验证码是274205
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:53:05] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:53:22] "POST /passport/register HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/Users/jill/PycharmProjects/flask_infomation/info/modules/passport/views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 275-370-920
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:53:51] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:53:51] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:53:51] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:53:51] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:53:51] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+DEBUG views.py:23 图片验证码内容：ELPW
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:53:52] "GET /passport/image_code?imageCodeId=666a9359-14cf-4948-b5e9-2756c4e37920 HTTP/1.1" 200 -
+DEBUG views.py:68 短信验证码是963207
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:54:04] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:54:15] "POST /passport/register HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:54:15] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:54:15] "GET /static/news/images/person01.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:54:15] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:54:17] "GET /passport/logout HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:54:17] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:54:17] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:54:24] "POST /passport/login HTTP/1.1" 200 -
+DEBUG Image.py:426 Importing BlpImagePlugin
+DEBUG Image.py:426 Importing BmpImagePlugin
+DEBUG Image.py:426 Importing BufrStubImagePlugin
+DEBUG Image.py:426 Importing CurImagePlugin
+DEBUG Image.py:426 Importing DcxImagePlugin
+DEBUG Image.py:426 Importing DdsImagePlugin
+DEBUG Image.py:426 Importing EpsImagePlugin
+DEBUG Image.py:426 Importing FitsStubImagePlugin
+DEBUG Image.py:426 Importing FliImagePlugin
+DEBUG Image.py:426 Importing FpxImagePlugin
+DEBUG Image.py:429 Image: failed to import FpxImagePlugin: No module named 'olefile'
+DEBUG Image.py:426 Importing FtexImagePlugin
+DEBUG Image.py:426 Importing GbrImagePlugin
+DEBUG Image.py:426 Importing GifImagePlugin
+DEBUG Image.py:426 Importing GribStubImagePlugin
+DEBUG Image.py:426 Importing Hdf5StubImagePlugin
+DEBUG Image.py:426 Importing IcnsImagePlugin
+DEBUG Image.py:426 Importing IcoImagePlugin
+DEBUG Image.py:426 Importing ImImagePlugin
+DEBUG Image.py:426 Importing ImtImagePlugin
+DEBUG Image.py:426 Importing IptcImagePlugin
+DEBUG Image.py:426 Importing JpegImagePlugin
+DEBUG Image.py:426 Importing Jpeg2KImagePlugin
+DEBUG Image.py:426 Importing McIdasImagePlugin
+DEBUG Image.py:426 Importing MicImagePlugin
+DEBUG Image.py:429 Image: failed to import MicImagePlugin: No module named 'olefile'
+DEBUG Image.py:426 Importing MpegImagePlugin
+DEBUG Image.py:426 Importing MpoImagePlugin
+DEBUG Image.py:426 Importing MspImagePlugin
+DEBUG Image.py:426 Importing PalmImagePlugin
+DEBUG Image.py:426 Importing PcdImagePlugin
+DEBUG Image.py:426 Importing PcxImagePlugin
+DEBUG Image.py:426 Importing PdfImagePlugin
+DEBUG Image.py:426 Importing PixarImagePlugin
+DEBUG Image.py:426 Importing PngImagePlugin
+DEBUG Image.py:426 Importing PpmImagePlugin
+DEBUG Image.py:426 Importing PsdImagePlugin
+DEBUG Image.py:426 Importing SgiImagePlugin
+DEBUG Image.py:426 Importing SpiderImagePlugin
+DEBUG Image.py:426 Importing SunImagePlugin
+DEBUG Image.py:426 Importing TgaImagePlugin
+DEBUG Image.py:426 Importing TiffImagePlugin
+DEBUG Image.py:426 Importing WebPImagePlugin
+DEBUG Image.py:426 Importing WmfImagePlugin
+DEBUG Image.py:426 Importing XbmImagePlugin
+DEBUG Image.py:426 Importing XpmImagePlugin
+DEBUG Image.py:426 Importing XVThumbImagePlugin
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 275-370-920
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:56:11] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:56:11] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:56:19] "POST /passport/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:56:19] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:56:19] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:56:21] "GET /passport/logout HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:56:21] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:56:21] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:56:25] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:56:25] "GET /static/admin/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:56:25] "GET /static/admin/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:56:25] "GET /static/admin/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:56:25] "GET /static/admin/images/login-bg.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:56:29] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:56:33] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:57:12] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:57:15] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:57:15] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:57:19] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:59:43] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:59:47] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:59:51] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 21:59:58] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:00:02] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:00:02] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:00:03] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:00:03] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:01:07] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:01:07] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:01:13] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:01:53] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:01:54] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:01:58] "POST /passport/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:03:07] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:03:08] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:03:08] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:03:08] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:03:08] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:03:12] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/Users/jill/PycharmProjects/flask_infomation/info/modules/admin/views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 275-370-920
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:09:35] "GET /admin/login HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:09:36] "GET /admin/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:09:36] "GET /admin/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:09:36] "GET /admin/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:09:36] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:09:36] "GET /admin/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:09:36] "GET /admin/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/Users/jill/PycharmProjects/flask_infomation/info/modules/admin/views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 275-370-920
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:10:00] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/Users/jill/PycharmProjects/flask_infomation/info/modules/admin/views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 275-370-920
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:10:01] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:10:04] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:10:08] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:10:13] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:10:27] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:10:31] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:10:35] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:11:27] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:11:27] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:11:27] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:11:28] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:11:28] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:11:28] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:11:28] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:11:28] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:11:28] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:11:28] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:11:28] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:11:29] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:11:29] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:11:29] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:11:33] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:11:37] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 275-370-920
+DEBUG Image.py:426 Importing BlpImagePlugin
+DEBUG Image.py:426 Importing BmpImagePlugin
+DEBUG Image.py:426 Importing BufrStubImagePlugin
+DEBUG Image.py:426 Importing CurImagePlugin
+DEBUG Image.py:426 Importing DcxImagePlugin
+DEBUG Image.py:426 Importing DdsImagePlugin
+DEBUG Image.py:426 Importing EpsImagePlugin
+DEBUG Image.py:426 Importing FitsStubImagePlugin
+DEBUG Image.py:426 Importing FliImagePlugin
+DEBUG Image.py:426 Importing FpxImagePlugin
+DEBUG Image.py:429 Image: failed to import FpxImagePlugin: No module named 'olefile'
+DEBUG Image.py:426 Importing FtexImagePlugin
+DEBUG Image.py:426 Importing GbrImagePlugin
+DEBUG Image.py:426 Importing GifImagePlugin
+DEBUG Image.py:426 Importing GribStubImagePlugin
+DEBUG Image.py:426 Importing Hdf5StubImagePlugin
+DEBUG Image.py:426 Importing IcnsImagePlugin
+DEBUG Image.py:426 Importing IcoImagePlugin
+DEBUG Image.py:426 Importing ImImagePlugin
+DEBUG Image.py:426 Importing ImtImagePlugin
+DEBUG Image.py:426 Importing IptcImagePlugin
+DEBUG Image.py:426 Importing JpegImagePlugin
+DEBUG Image.py:426 Importing Jpeg2KImagePlugin
+DEBUG Image.py:426 Importing McIdasImagePlugin
+DEBUG Image.py:426 Importing MicImagePlugin
+DEBUG Image.py:429 Image: failed to import MicImagePlugin: No module named 'olefile'
+DEBUG Image.py:426 Importing MpegImagePlugin
+DEBUG Image.py:426 Importing MpoImagePlugin
+DEBUG Image.py:426 Importing MspImagePlugin
+DEBUG Image.py:426 Importing PalmImagePlugin
+DEBUG Image.py:426 Importing PcdImagePlugin
+DEBUG Image.py:426 Importing PcxImagePlugin
+DEBUG Image.py:426 Importing PdfImagePlugin
+DEBUG Image.py:426 Importing PixarImagePlugin
+DEBUG Image.py:426 Importing PngImagePlugin
+DEBUG Image.py:426 Importing PpmImagePlugin
+DEBUG Image.py:426 Importing PsdImagePlugin
+DEBUG Image.py:426 Importing SgiImagePlugin
+DEBUG Image.py:426 Importing SpiderImagePlugin
+DEBUG Image.py:426 Importing SunImagePlugin
+DEBUG Image.py:426 Importing TgaImagePlugin
+DEBUG Image.py:426 Importing TiffImagePlugin
+DEBUG Image.py:426 Importing WebPImagePlugin
+DEBUG Image.py:426 Importing WmfImagePlugin
+DEBUG Image.py:426 Importing XbmImagePlugin
+DEBUG Image.py:426 Importing XpmImagePlugin
+DEBUG Image.py:426 Importing XVThumbImagePlugin
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 275-370-920
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:13:54] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:13:54] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:13:55] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:13:55] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:13:55] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:13:59] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:14:56] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:15:28] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/Users/jill/PycharmProjects/flask_infomation/info/modules/admin/views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 275-370-920
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:15:29] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:15:32] "POST /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:15:36] "GET /admin/login HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:15:40] "GET /admin/ HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:15:40] "GET /static/news/images/not_found.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:17:53] "GET /admin HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 275-370-920
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:38] "GET /admin HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:38] "GET /admin HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:39] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:40] "GET /admin HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:40] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:40] "GET /admin HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:40] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:41] "GET /admin HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:41] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:41] "GET /admin HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:41] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:41] "GET /admin HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:41] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:42] "GET /admin HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:42] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:42] "GET /admin HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:42] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:42] "GET /admin HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:42] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:43] "GET /admin HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:43] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:43] "GET /admin HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:43] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:45] "GET /admin HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:45] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:47] "GET /admin HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:48] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:54] "POST /admin/login HTTP/1.1" 302 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:54] "GET /admin/index HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:54] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:54] "GET /static/admin/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:54] "GET /static/admin/images/icons.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:54] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:24:54] "GET /static/admin/js/echarts.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:25:01] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:25:03] "GET /admin/user_list HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:25:03] "GET /static/admin/css/jquery.pagination.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:25:03] "GET /static/admin/js/jquery.pagination.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:25:09] "GET /admin/news_edit HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:25:10] "GET /admin/news_review HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:25:13] "GET /admin/news_edit HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:25:31] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:25:40] "GET /admin/user_list HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:25:44] "GET /admin/user_list HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:25:46] "GET /admin/news_type HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:25:46] "GET /static/admin/js/news_type.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:25:48] "GET /admin/news_review HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:25:50] "GET /admin/news_edit HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:25:52] "GET /admin/news_edit HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:16] "GET /admin/news_edit_detail?news_id=1158 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:16] "GET /static/admin/js/jquery.form.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:16] "GET /static/admin/tinymce/js/tinymce/tinymce.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:16] "GET /static/admin/js/tinymce_setup.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:16] "GET /static/admin/js/news_edit_detail.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:16] "GET /static/admin/tinymce/js/tinymce/themes/modern/theme.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:16] "GET /static/admin/tinymce/js/tinymce/langs/zh_CN.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:16] "GET /static/admin/tinymce/js/tinymce/plugins/advlist/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:16] "GET /static/admin/tinymce/js/tinymce/plugins/autolink/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:16] "GET /static/admin/tinymce/js/tinymce/plugins/link/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:16] "GET /static/admin/tinymce/js/tinymce/plugins/image/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:16] "GET /static/admin/tinymce/js/tinymce/plugins/lists/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:16] "GET /static/admin/tinymce/js/tinymce/plugins/charmap/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:16] "GET /static/admin/tinymce/js/tinymce/plugins/print/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:17] "GET /static/admin/tinymce/js/tinymce/plugins/preview/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:17] "GET /static/admin/tinymce/js/tinymce/plugins/hr/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:17] "GET /static/admin/tinymce/js/tinymce/plugins/anchor/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:17] "GET /static/admin/tinymce/js/tinymce/plugins/pagebreak/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:17] "GET /static/admin/tinymce/js/tinymce/plugins/spellchecker/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:17] "GET /static/admin/tinymce/js/tinymce/plugins/searchreplace/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:17] "GET /static/admin/tinymce/js/tinymce/plugins/wordcount/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:17] "GET /static/admin/tinymce/js/tinymce/plugins/visualblocks/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:17] "GET /static/admin/tinymce/js/tinymce/plugins/visualchars/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:17] "GET /static/admin/tinymce/js/tinymce/plugins/code/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:17] "GET /static/admin/tinymce/js/tinymce/plugins/fullscreen/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:17] "GET /static/admin/tinymce/js/tinymce/plugins/insertdatetime/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:17] "GET /static/admin/tinymce/js/tinymce/plugins/media/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:17] "GET /static/admin/tinymce/js/tinymce/plugins/nonbreaking/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:17] "GET /static/admin/tinymce/js/tinymce/plugins/save/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:17] "GET /static/admin/tinymce/js/tinymce/plugins/table/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:17] "GET /static/admin/tinymce/js/tinymce/plugins/contextmenu/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:17] "GET /static/admin/tinymce/js/tinymce/plugins/directionality/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:17] "GET /static/admin/tinymce/js/tinymce/plugins/template/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:17] "GET /static/admin/tinymce/js/tinymce/plugins/paste/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:17] "GET /static/admin/tinymce/js/tinymce/plugins/textcolor/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:17] "GET /static/admin/tinymce/js/tinymce/plugins/codesample/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:17] "GET /static/admin/tinymce/js/tinymce/plugins/imageupload/plugin.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:17] "GET /static/admin/tinymce/js/tinymce/plugins/imageupload/css/style.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:17] "GET /static/admin/tinymce/js/tinymce/plugins/imageupload/jquery.iframe-post-form.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:17] "GET /static/admin/tinymce/js/tinymce/skins/lightgray/skin.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:17] "GET /static/admin/tinymce/js/tinymce/plugins/imageupload/img/icon.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:17] "GET /static/admin/tinymce/js/tinymce/skins/lightgray/content.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:17] "GET /static/admin/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.woff HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:17] "GET /static/admin/tinymce/js/tinymce/plugins/codesample/css/prism.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:28] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:28] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:29] "GET /news/1158 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:29] "GET /static/news/js/detail.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:29] "GET /static/news/images/user_pic.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:29] "GET /static/news/images/comment_icon.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:29] "GET /static/news/images/collect_icons.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:29] "GET /static/news/images/focus_icons.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:31] "POST /news/news_collect HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:32] "POST /news/news_collect HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:34] "POST /news/news_comment HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:36] "POST /news/news_comment HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:37] "GET /news/1158 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:37] "GET /static/news/images/reply_icon.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:37] "GET /static/news/images/zan_icon.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:37] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:40] "POST /news/news_comment HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:41] "GET /news/1158 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:41] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:44] "POST /news/followed_user HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:44] "POST /news/followed_user HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:44] "POST /news/followed_user HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:26:59] "GET /news/149 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:27:42] "GET /news/149 HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 275-370-920
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:30:00] "GET /passport/logout HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:30:00] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:30:00] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+DEBUG views.py:23 图片验证码内容：UGFK
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:30:04] "GET /passport/image_code?imageCodeId=73f84b7d-9fa1-4ac4-a289-8f176cc90eb3 HTTP/1.1" 200 -
+DEBUG views.py:23 图片验证码内容：HZ3M
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:30:09] "GET /passport/image_code?imageCodeId=5be49342-a287-41f5-ade3-eb90b63c41b9 HTTP/1.1" 200 -
+DEBUG views.py:23 图片验证码内容：SG8S
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:30:10] "GET /passport/image_code?imageCodeId=4dbca49e-08dc-4c66-887c-6c08cc8a6cc0 HTTP/1.1" 200 -
+DEBUG views.py:68 短信验证码是591388
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:30:13] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/Users/jill/PycharmProjects/flask_infomation/info/utils/yuntongxun/sms.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 275-370-920
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:34:57] "POST /passport/sms_code HTTP/1.1" 200 -
+DEBUG views.py:23 图片验证码内容：MS86
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:35:00] "GET /passport/image_code?imageCodeId=ec15fd73-e5d3-41af-b6ea-48389e0c7a57 HTTP/1.1" 200 -
+DEBUG views.py:68 短信验证码是693657
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:35:05] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 275-370-920
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:35:42] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:35:42] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:35:42] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:35:42] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:35:42] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:35:42] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:35:42] "GET /favicon.ico HTTP/1.1" 200 -
+DEBUG views.py:23 图片验证码内容：KQAF
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:35:44] "GET /passport/image_code?imageCodeId=fc1dd80a-096e-48a5-8bf1-a3e9af5fbf9b HTTP/1.1" 200 -
+DEBUG Image.py:426 Importing BlpImagePlugin
+DEBUG Image.py:426 Importing BmpImagePlugin
+DEBUG Image.py:426 Importing BufrStubImagePlugin
+DEBUG Image.py:426 Importing CurImagePlugin
+DEBUG Image.py:426 Importing DcxImagePlugin
+DEBUG Image.py:426 Importing DdsImagePlugin
+DEBUG Image.py:426 Importing EpsImagePlugin
+DEBUG Image.py:426 Importing FitsStubImagePlugin
+DEBUG Image.py:426 Importing FliImagePlugin
+DEBUG Image.py:426 Importing FpxImagePlugin
+DEBUG Image.py:429 Image: failed to import FpxImagePlugin: No module named 'olefile'
+DEBUG Image.py:426 Importing FtexImagePlugin
+DEBUG Image.py:426 Importing GbrImagePlugin
+DEBUG Image.py:426 Importing GifImagePlugin
+DEBUG Image.py:426 Importing GribStubImagePlugin
+DEBUG Image.py:426 Importing Hdf5StubImagePlugin
+DEBUG Image.py:426 Importing IcnsImagePlugin
+DEBUG Image.py:426 Importing IcoImagePlugin
+DEBUG Image.py:426 Importing ImImagePlugin
+DEBUG Image.py:426 Importing ImtImagePlugin
+DEBUG Image.py:426 Importing IptcImagePlugin
+DEBUG Image.py:426 Importing JpegImagePlugin
+DEBUG Image.py:426 Importing Jpeg2KImagePlugin
+DEBUG Image.py:426 Importing McIdasImagePlugin
+DEBUG Image.py:426 Importing MicImagePlugin
+DEBUG Image.py:429 Image: failed to import MicImagePlugin: No module named 'olefile'
+DEBUG Image.py:426 Importing MpegImagePlugin
+DEBUG Image.py:426 Importing MpoImagePlugin
+DEBUG Image.py:426 Importing MspImagePlugin
+DEBUG Image.py:426 Importing PalmImagePlugin
+DEBUG Image.py:426 Importing PcdImagePlugin
+DEBUG Image.py:426 Importing PcxImagePlugin
+DEBUG Image.py:426 Importing PdfImagePlugin
+DEBUG Image.py:426 Importing PixarImagePlugin
+DEBUG Image.py:426 Importing PngImagePlugin
+DEBUG Image.py:426 Importing PpmImagePlugin
+DEBUG Image.py:426 Importing PsdImagePlugin
+DEBUG Image.py:426 Importing SgiImagePlugin
+DEBUG Image.py:426 Importing SpiderImagePlugin
+DEBUG Image.py:426 Importing SunImagePlugin
+DEBUG Image.py:426 Importing TgaImagePlugin
+DEBUG Image.py:426 Importing TiffImagePlugin
+DEBUG Image.py:426 Importing WebPImagePlugin
+DEBUG Image.py:426 Importing WmfImagePlugin
+DEBUG Image.py:426 Importing XbmImagePlugin
+DEBUG Image.py:426 Importing XpmImagePlugin
+DEBUG Image.py:426 Importing XVThumbImagePlugin
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 275-370-920
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:36:46] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:36:46] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:36:47] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:36:47] "GET /favicon.ico HTTP/1.1" 200 -
+DEBUG views.py:23 图片验证码内容：CR49
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:36:48] "GET /passport/image_code?imageCodeId=c82aef9e-081b-4d23-ab06-54d0613af479 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:36:55] "POST /passport/sms_code HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:37:36] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/Users/jill/PycharmProjects/flask_infomation/info/modules/passport/views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 275-370-920
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:37:38] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:37:38] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:37:38] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:37:38] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+DEBUG views.py:23 图片验证码内容：YPG9
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:37:38] "GET /passport/image_code?imageCodeId=e1aad4a1-af6e-4319-8333-6103c9c0c59d HTTP/1.1" 200 -
+DEBUG views.py:68 短信验证码是379538
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:37:48] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 275-370-920
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:38:03] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:38:03] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:38:03] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:38:03] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:38:03] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:38:03] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:38:03] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:38:03] "GET /favicon.ico HTTP/1.1" 200 -
+DEBUG views.py:23 图片验证码内容：97JI
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:38:05] "GET /passport/image_code?imageCodeId=4cd89374-13b6-41a5-9816-7dddcd9f75b3 HTTP/1.1" 200 -
+DEBUG Image.py:426 Importing BlpImagePlugin
+DEBUG Image.py:426 Importing BmpImagePlugin
+DEBUG Image.py:426 Importing BufrStubImagePlugin
+DEBUG Image.py:426 Importing CurImagePlugin
+DEBUG Image.py:426 Importing DcxImagePlugin
+DEBUG Image.py:426 Importing DdsImagePlugin
+DEBUG Image.py:426 Importing EpsImagePlugin
+DEBUG Image.py:426 Importing FitsStubImagePlugin
+DEBUG Image.py:426 Importing FliImagePlugin
+DEBUG Image.py:426 Importing FpxImagePlugin
+DEBUG Image.py:429 Image: failed to import FpxImagePlugin: No module named 'olefile'
+DEBUG Image.py:426 Importing FtexImagePlugin
+DEBUG Image.py:426 Importing GbrImagePlugin
+DEBUG Image.py:426 Importing GifImagePlugin
+DEBUG Image.py:426 Importing GribStubImagePlugin
+DEBUG Image.py:426 Importing Hdf5StubImagePlugin
+DEBUG Image.py:426 Importing IcnsImagePlugin
+DEBUG Image.py:426 Importing IcoImagePlugin
+DEBUG Image.py:426 Importing ImImagePlugin
+DEBUG Image.py:426 Importing ImtImagePlugin
+DEBUG Image.py:426 Importing IptcImagePlugin
+DEBUG Image.py:426 Importing JpegImagePlugin
+DEBUG Image.py:426 Importing Jpeg2KImagePlugin
+DEBUG Image.py:426 Importing McIdasImagePlugin
+DEBUG Image.py:426 Importing MicImagePlugin
+DEBUG Image.py:429 Image: failed to import MicImagePlugin: No module named 'olefile'
+DEBUG Image.py:426 Importing MpegImagePlugin
+DEBUG Image.py:426 Importing MpoImagePlugin
+DEBUG Image.py:426 Importing MspImagePlugin
+DEBUG Image.py:426 Importing PalmImagePlugin
+DEBUG Image.py:426 Importing PcdImagePlugin
+DEBUG Image.py:426 Importing PcxImagePlugin
+DEBUG Image.py:426 Importing PdfImagePlugin
+DEBUG Image.py:426 Importing PixarImagePlugin
+DEBUG Image.py:426 Importing PngImagePlugin
+DEBUG Image.py:426 Importing PpmImagePlugin
+DEBUG Image.py:426 Importing PsdImagePlugin
+DEBUG Image.py:426 Importing SgiImagePlugin
+DEBUG Image.py:426 Importing SpiderImagePlugin
+DEBUG Image.py:426 Importing SunImagePlugin
+DEBUG Image.py:426 Importing TgaImagePlugin
+DEBUG Image.py:426 Importing TiffImagePlugin
+DEBUG Image.py:426 Importing WebPImagePlugin
+DEBUG Image.py:426 Importing WmfImagePlugin
+DEBUG Image.py:426 Importing XbmImagePlugin
+DEBUG Image.py:426 Importing XpmImagePlugin
+DEBUG Image.py:426 Importing XVThumbImagePlugin
+DEBUG views.py:68 短信验证码是672563
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:38:41] "POST /passport/sms_code HTTP/1.1" 200 -
+DEBUG views.py:23 图片验证码内容：LDNE
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:39:09] "GET /passport/image_code?imageCodeId=71f60b80-8fbc-411f-bc39-051b1ef26ecc HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:39:11] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:39:11] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:39:11] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:39:11] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:39:12] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:39:12] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+DEBUG views.py:23 图片验证码内容：7YQL
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:39:13] "GET /passport/image_code?imageCodeId=bc554dd2-3803-4667-9eba-e751f3f099a7 HTTP/1.1" 200 -
+DEBUG views.py:23 图片验证码内容：4L35
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:39:19] "GET /passport/image_code?imageCodeId=f56aad56-5f7f-4020-a4c0-96c1f5e2271a HTTP/1.1" 200 -
+DEBUG views.py:68 短信验证码是787015
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:39:52] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 275-370-920
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:40:08] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:40:08] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:40:08] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:40:08] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:40:08] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:40:08] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:40:08] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:40:08] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:40:08] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:40:08] "GET /favicon.ico HTTP/1.1" 200 -
+DEBUG views.py:23 图片验证码内容：4PFI
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:40:09] "GET /passport/image_code?imageCodeId=7f1cf06b-1401-42c7-b1d2-627d04400848 HTTP/1.1" 200 -
+DEBUG views.py:68 短信验证码是472274
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:40:18] "POST /passport/sms_code HTTP/1.1" 200 -
+ERROR views.py:119 (pymysql.err.IntegrityError) (1062, "Duplicate entry '17719715757' for key 'mobile'")
+[SQL: INSERT INTO info_user (create_time, update_time, nick_name, password_hash, mobile, avatar_url, last_login, is_admin, signature, gender) VALUES (%(create_time)s, %(update_time)s, %(nick_name)s, %(password_hash)s, %(mobile)s, %(avatar_url)s, %(last_login)s, %(is_admin)s, %(signature)s, %(gender)s)]
+[parameters: {'create_time': datetime.datetime(2020, 2, 19, 22, 40, 34, 373974), 'update_time': datetime.datetime(2020, 2, 19, 22, 40, 34, 373997), 'nick_name': '17719715757', 'password_hash': 'pbkdf2:sha256:150000$XLKuTBtQ$35da7cb8edd65691265ca0da98c24e92744b1c7fffa917cafaee550a86e3a90c', 'mobile': '17719715757', 'avatar_url': None, 'last_login': datetime.datetime(2020, 2, 19, 22, 40, 34, 193351), 'is_admin': 0, 'signature': None, 'gender': 'MAN'}]
+(Background on this error at: http://sqlalche.me/e/gkpj)
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:40:34] "POST /passport/register HTTP/1.1" 200 -
+DEBUG views.py:23 图片验证码内容：HJ8G
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:40:48] "GET /passport/image_code?imageCodeId=b68d2c4e-3655-4488-93fc-696b372d358d HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:40:56] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:40:56] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:40:56] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+DEBUG views.py:23 图片验证码内容：LFJK
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:40:57] "GET /passport/image_code?imageCodeId=f80ebce7-b383-4ba9-ad0d-d297788aec59 HTTP/1.1" 200 -
+DEBUG views.py:68 短信验证码是064854
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:41:06] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 275-370-920
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:41:28] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:41:28] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:41:28] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+DEBUG views.py:23 图片验证码内容：EFGG
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:41:30] "GET /passport/image_code?imageCodeId=cef0276b-7783-4e44-978b-fa9e66978eee HTTP/1.1" 200 -
+DEBUG views.py:68 短信验证码是221686
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:41:38] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/Users/jill/PycharmProjects/flask_infomation/info/modules/passport/views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 275-370-920
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:42:32] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:42:32] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:42:32] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:42:32] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/Users/jill/PycharmProjects/flask_infomation/info/utils/yuntongxun/sms.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 275-370-920
+DEBUG views.py:23 图片验证码内容：NTHG
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:42:55] "GET /passport/image_code?imageCodeId=0b723c39-00f1-4c21-bd7e-0931315cf6ca HTTP/1.1" 200 -
+DEBUG views.py:68 短信验证码是907059
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:43:09] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/Users/jill/PycharmProjects/flask_infomation/info/modules/passport/views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 275-370-920
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:43:20] "POST /passport/sms_code HTTP/1.1" 200 -
+DEBUG views.py:23 图片验证码内容：EFIA
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:43:22] "GET /passport/image_code?imageCodeId=9fc35ff2-b0dd-4825-ab7a-7e198956ed00 HTTP/1.1" 200 -
+DEBUG views.py:68 短信验证码是117414
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:43:26] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:47:23] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:47:24] "GET /news_list?cid=1&page=1 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:47:24] "GET /favicon.ico HTTP/1.1" 200 -
+DEBUG views.py:23 图片验证码内容：GW5S
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:47:25] "GET /passport/image_code?imageCodeId=a3eb8693-a3f4-4afe-b73e-02059aa321ac HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:47:38] "POST /passport/sms_code HTTP/1.1" 200 -
+DEBUG views.py:23 图片验证码内容：86CJ
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:47:51] "GET /passport/image_code?imageCodeId=2e9bff4e-e3f4-4ff7-ae9c-604453ea1571 HTTP/1.1" 200 -
+DEBUG views.py:68 短信验证码是144982
+INFO _internal.py:122 127.0.0.1 - - [19/Feb/2020 22:47:56] "POST /passport/sms_code HTTP/1.1" 200 -
