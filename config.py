@@ -17,7 +17,6 @@ class Config():
     SESSION_REDIS = StrictRedis(host=REDIS_HOST, port=REDIS_PORT)
     LOG_LEVEL = logging.DEBUG
 
-
 class DevelopmentConfig(Config):
 
     DEBUG = False
