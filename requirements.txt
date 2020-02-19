@@ -22,7 +22,7 @@ coreschema==0.0.4
 cryptography==2.6.1
 cssselect==1.0.3
 decorator==4.4.0
-Django==1.11.11
+Django==1.11.28
 django-ckeditor==5.9.0
 django-cors-headers==3.2.1
 django-crontab==0.7.1
